@@ -1,5 +1,7 @@
 # Fast_Setup-Cline_Memory_Bank
 This is just for easy&fast setup to use cline memory bank prompt for any agent ai.
+Normally, Cline's memory is reset at each session, but thanks to the Memory Bank, markdown files containing important project information are loaded at each new session, allowing Cline to resume from where it left off.
+Memory Bank works best when your starting context is lean.
 
 Cline Memory Bank
 Search for rules from your IDE.
@@ -40,7 +42,31 @@ Plan mode: Start here when resuming a project. Ask Cline to read the Memory Bank
 Act mode: Switch to Act mode once you have a plan. Cline retains everything from the planning session and can implement changes.
 
 
-<img width="563" height="262" alt="image" src="https://github.com/user-attachments/assets/56ad09f6-ba5a-4213-ad5c-a3c26dadaa34" />
+                                 When your context window fills up:
+Ask Cline to “update memory bank” to document the current state
+Start a new conversation
+Ask Cline to “follow your custom instructions”
+This preserves important context in your Memory Bank files before the window clears, letting you continue seamlessly in a fresh conversation.
+
+
+
+
+Cline’s built-in commands offer more targeted options:
+/smol compresses your conversation history while keeping you in the same task. Use this when you want to free up space without starting over.
+/newtask distills key decisions, file changes, and progress into a fresh task with a clean context window. This is like a developer handoff that preserves what matters.
+  
+
+
+
+Enable Auto-Compact to let Cline automatically compress context as you work. This reduces how often you need to manually manage the context window, though you should still update the Memory Bank after significant milestones.
+
+<img width="912" height="132" alt="image" src="https://github.com/user-attachments/assets/8bdd6f45-944d-4f31-8724-bb47c20f791b" />
+
+
+
+
+
+
 
 
 
